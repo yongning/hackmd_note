@@ -17,22 +17,6 @@
 
 ### Step 2: Write something in Markdown
 
-### Anonymous function
-An **anonymous function (function literal, lambda abstraction, or lambda expressin)** is a function definition that is not bound to an identifier. Anonymous functions are often arguments being passed to higher-order functions, or used for constructing the result of a higher-order function that needs to return a function. If the function is only used once, or a limited number of times, an anonymous function may be syntactically lighter than using a named function.
-以上定义从wiki中来，特点就是not bound to an identifier。在标准c语言中，所有函数都是静态类型，有相应的identifier,所以c语言标准并不支持lambda，但是gcc或者clang可以通过macro的方式来支持lambda。但是价值在哪里？不理解
-
-#### Lambda expression in C++
-- A
-
-
-```clike
-static void __init do_basic_setup(void)
-{
-    
-    do_initcalls();
-    
-}
-```
 Let's try it out!
 Apply different styling to this paragraph:
 **HackMD gets everyone on the same page with Markdown.** ==Real-time collaborate on any documentation in markdown.== Capture fleeting ideas and formalize tribal knowledge.
