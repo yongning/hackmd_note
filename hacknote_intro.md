@@ -22,7 +22,16 @@ An **anonymous function (function literal, lambda abstraction, or lambda express
 以上定义从wiki中来，特点就是not bound to an identifier。在标准c语言中，所有函数都是静态类型，有相应的identifier,所以c语言标准并不支持lambda，但是gcc或者clang可以通过macro的方式来支持lambda。但是价值在哪里？不理解
 
 #### Lambda expression in C++
-- A
+- A possibly empty *capture list*, specifying what names from the definition environment can be used in the lambda expression's body, and whether those are copied or accessed by reference. The capture list is delimited by **[ ]**
+- An optional *parameter list* specifying what arguments the lambda expression requires. The parameter list is delimited by **( )**.
+- An optional **mutable** spcifier, indicating the lambda expression's body may modify the state of the lambda (i.e, change the lambda's copies of variables captured by value)
+- An optional **noexcept** specifier
+- An optional return type declartion of the form **->** type
+- A body, specifying the code to be executed. The body is delimited by **{ }**
+
+The notion of "capture" of local variables is not provided for functions. This implies that a lambda can act as a local function even though a function can not.
+
+
 
 
 ```clike
